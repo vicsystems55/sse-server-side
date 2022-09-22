@@ -20,4 +20,15 @@ class FireEventController extends Controller
         return back()->with('msg', 'Message sent!!');
 
     }
+
+    public function api_fire_event(Request $request)
+    {
+        # code...
+
+        
+        event(new ButtonClickedEvent($request->email));
+
+        return 'sent';
+
+    }
 }

@@ -21,5 +21,6 @@ Route::get('/', function () {
 });
 
 Route::get('/', [UserProfileController::class, 'welcome']);
+
 Route::post('/fire_event', [FireEventController::class, 'fire_event'])->name('fire_event');
 

@@ -26,7 +26,7 @@ class FireEventController extends Controller
         # code...
 
         
-        event(new ButtonClickedEvent($request->email));
+        event(new ButtonClickedEvent('stanleycharles44@gmail.com'));
 
         // return 'sent';
 

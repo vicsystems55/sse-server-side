@@ -30,4 +30,4 @@ Route::post('/login', [ApiAuthController::class, 'login']);
 
 Route::get('/userData', [UserProfileController::class, 'userData'])->middleware('auth:sanctum');
 
-Route::get('/fire_event', [FireEventController::class, 'api_fire_event'])->name('fire_event');
+Route::post('/fire_event', [FireEventController::class, 'api_fire_event'])->name('fire_event');
